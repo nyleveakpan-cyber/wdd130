@@ -1,0 +1,168 @@
+/* Rafting Site Stylesheet */
+
+:root {
+    --primary-color: #0B6E99;
+    --secondary-color: #F4A261;
+    --accent1-color: #264653;
+    --accent2-color: #E9C46A;
+
+    --heading-font: Georgia, serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: #ffffff;
+}
+
+/* Page Width */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 12px;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: black;
+}
+
+/* Headings */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* General spacing */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Hero Title */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 16px;
+    background-color: rgba(38, 70, 83, 0.7);
+    color: white;
+}
+
+/* Hero Article */
+.hero article {
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(233, 196, 106, 0.9);
+    padding: 20px;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 15px;
+    border: 2px solid white;
+}
+
+/* Sections */
+section {
+    text-align: center;
+}
+
+section img {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+}
+
+/* Figures */
+figure {
+    display: inline-block;
+    margin: 10px;
+}
+
+figcaption {
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+/* Social Media */
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 35px;
+    height: auto;
+}
