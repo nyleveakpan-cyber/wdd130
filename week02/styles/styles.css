@@ -1,4 +1,6 @@
-```css nav {
+/* WDD 130 - Home Page Styles */
+
+nav {
     background-color: steelblue;
     padding: 10px;
 }
@@ -7,6 +9,7 @@ nav a {
     color: white;
     display: block;
     padding: 20px;
+    text-decoration: none;
 }
 
 h1 {
@@ -34,8 +37,8 @@ aside {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    background-color: #eeeeee;
+    color: #333333;
 }
 
 aside img {
