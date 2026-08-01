@@ -7,6 +7,7 @@
     <meta name="description"
       content="Contact White Water Rafting Adventures for reservations, questions, and information about our exciting rafting trips.">
     <meta name="author" content="Evelyn Akpan">
+
     <title>Contact Us | White Water Rafting Adventures</title>
 
     <link rel="stylesheet" href="styles/rafting.css">
@@ -15,6 +16,7 @@
 <body>
 
     <header>
+
         <img src="images/logo.jpg" alt="White Water Rafting Adventures company logo">
 
         <nav>
@@ -23,100 +25,103 @@
             <a href="trips.html">Trips</a>
             <a href="contact.html">Contact Us</a>
         </nav>
+
     </header>
 
     <main>
 
         <h1>Contact Us</h1>
 
-        <!-- Company Information -->
-        <section class="company-info">
+        <section class="contact-info">
 
             <h2>Company Information</h2>
 
-            <p><strong>Address:</strong> 25 River View Road, Uyo, Akwa Ibom State, Nigeria</p>
+            <p><strong>Address:</strong> 15 Aka Road, Uyo, Akwa Ibom State, Nigeria</p>
 
             <p><strong>Phone:</strong> +234 800 123 4567</p>
 
             <p><strong>Email:</strong> info@whitewaterrafting.com</p>
 
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.585788322919!2d7.9311!3d5.0339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105d57e1b2f6f6f1%3A0x6b8d9c0e5f0d0f1!2sUyo%2C%20Akwa%20Ibom!5e0!3m2!1sen!2sng!4v0000000000000"
-              width="100%" height="300" allowfullscreen="" loading="lazy"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.585788322919!2d7.9311!3d5.0377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105d57e1b2f6f6f1%3A0x6b8d9c0e5f0d0f1!2sUyo%2C%20Akwa%20Ibom!5e0!3m2!1sen!2sng!4v0000000000000"
+              height="300" allowfullscreen loading="lazy"
               referrerpolicy="no-referrer-when-downgrade">
             </iframe>
 
         </section>
 
-        <!-- Employee Profiles -->
         <section class="employees">
 
             <h2>Meet Our Team</h2>
 
             <figure>
                 <img src="images/employee1.jpg" alt="John Smith">
-                <figcaption>John Smith - General Manager</figcaption>
+                <figcaption>John Smith – River Guide</figcaption>
             </figure>
 
             <figure>
                 <img src="images/employee2.jpg" alt="Sarah Johnson">
-                <figcaption>Sarah Johnson - Senior River Guide</figcaption>
+                <figcaption>Sarah Johnson – Trip Coordinator</figcaption>
             </figure>
 
             <figure>
                 <img src="images/employee3.jpg" alt="David Brown">
-                <figcaption>David Brown - Customer Service Manager</figcaption>
+                <figcaption>David Brown – Safety Instructor</figcaption>
             </figure>
 
         </section>
 
-        <!-- Contact Form -->
         <section class="contact-form">
 
             <h2>Send Us a Message</h2>
 
-            <form>
+            <form action="#" method="post">
 
                 <label for="fullname">Full Name</label>
+
                 <input type="text" id="fullname" name="fullname" required>
 
                 <label for="email">Email Address</label>
+
                 <input type="email" id="email" name="email" required>
 
-                <fieldset>
+                <p><strong>Purpose of Message</strong></p>
 
-                    <legend>Purpose of Message</legend>
+                <input type="radio" id="general" name="purpose" value="general">
 
-                    <label>
-                        <input type="radio" name="purpose" value="general" required>
-                        General Inquiry
-                    </label>
+                <label for="general">General Inquiry</label>
 
-                    <label>
-                        <input type="radio" name="purpose" value="reservation">
-                        Reservation Question
-                    </label>
+                <br>
 
-                    <label>
-                        <input type="radio" name="purpose" value="suggestion">
-                        Website Suggestion
-                    </label>
+                <input type="radio" id="reservation" name="purpose" value="reservation">
 
-                </fieldset>
+                <label for="reservation">Reservation Question</label>
+
+                <br>
+
+                <input type="radio" id="suggestion" name="purpose" value="suggestion">
+
+                <label for="suggestion">Website Suggestion</label>
+
+                <br><br>
 
                 <label for="message">Message</label>
 
                 <textarea id="message" name="message" rows="6" required></textarea>
 
-                <label class="checkbox">
+                <br>
 
-                    <input type="checkbox" name="newsletter">
+                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
 
+                <label for="newsletter">
                     Please subscribe me to the monthly newsletter
-
                 </label>
 
-                <button type="submit">Send My Message</button>
+                <br><br>
+
+                <button type="submit">
+                    Send Message
+                </button>
 
             </form>
 
