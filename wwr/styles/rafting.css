@@ -3,7 +3,9 @@
   Author: Evelyn Akpan
 =========================================*/
 
-/* Color Palette */
+/*==============================
+  Color Palette & Fonts
+==============================*/
 :root {
     --primary-color: #0B6E99;
     --secondary-color: #F4A261;
@@ -15,38 +17,43 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* Reset */
+/*==============================
+  Reset
+==============================*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
+/*==============================
+  Body
+==============================*/
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-    background-color: var(--white);
+    background: var(--white);
     line-height: 1.6;
 }
 
-/* Page Width */
+/*==============================
+  Page Width
+==============================*/
 header,
 main,
 footer {
-    max-width: 840px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
-/* =====================================
-   Header
-===================================== */
-
+/*==============================
+  Header
+==============================*/
 header {
     display: grid;
     grid-template-columns: 150px 1fr;
     align-items: center;
-    background-color: var(--primary-color);
+    background: var(--primary-color);
     padding: 15px;
 }
 
@@ -55,10 +62,9 @@ header img {
     height: auto;
 }
 
-/* =====================================
-   Navigation
-===================================== */
-
+/*==============================
+  Navigation
+==============================*/
 nav {
     display: flex;
     justify-content: space-evenly;
@@ -66,32 +72,32 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
-    font-weight: bold;
     padding: 12px;
-    transition: 0.3s;
+    font-weight: bold;
+    transition: .3s;
 }
 
 nav a:hover {
-    background-color: var(--secondary-color);
+    background: var(--secondary-color);
     color: black;
     border-radius: 5px;
 }
 
-/* =====================================
-   Headings
-===================================== */
-
+/*==============================
+  Headings
+==============================*/
 h1,
-h2 {
+h2,
+h3 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
 main h1 {
     text-align: center;
-    margin: 30px 0;
+    margin: 25px 0;
 }
 
 h2 {
@@ -99,10 +105,23 @@ h2 {
     margin: 20px 0;
 }
 
-/* =====================================
-   Hero Section
-===================================== */
+/*==============================
+  Paragraphs
+==============================*/
+p {
+    padding: 10px;
+}
 
+/*==============================
+  Sections
+==============================*/
+section {
+    margin: 35px 0;
+}
+
+/*==============================
+  Hero Section
+==============================*/
 .hero {
     position: relative;
 }
@@ -114,13 +133,13 @@ h2 {
 
 .hero h1 {
     position: absolute;
-    top: 20px;
+    top: 25px;
     width: 100%;
-    text-align: center;
-    color: white;
-    background-color: rgba(38, 70, 83, .75);
     padding: 15px;
     margin: 0;
+    color: white;
+    text-align: center;
+    background: rgba(38, 70, 83, .75);
 }
 
 .hero article {
@@ -128,31 +147,29 @@ h2 {
     bottom: 30px;
     left: 20px;
     right: 20px;
-    background-color: var(--accent2-color);
+    background: var(--accent2-color);
     padding: 15px;
 }
 
 .hero article img {
     float: right;
-    width: 140px;
+    width: 150px;
     margin-left: 15px;
     border: 2px solid white;
 }
 
-/* =====================================
-   History Section
-===================================== */
-
+/*==============================
+  History
+==============================*/
 .history {
     display: grid;
     grid-template-columns: 1fr 220px 1fr;
     gap: 20px;
     align-items: center;
-    margin: 40px 0;
 }
 
 .history h2 {
-    grid-column: 1 / 4;
+    grid-column: 1/4;
 }
 
 .history img {
@@ -160,15 +177,13 @@ h2 {
     height: auto;
 }
 
-/* =====================================
-   Adventure Section
-===================================== */
-
+/*==============================
+  Adventures
+==============================*/
 .adventures {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 40px 0;
 }
 
 .adventures h2 {
@@ -176,34 +191,32 @@ h2 {
 }
 
 .adventures figure {
-    width: 150px;
+    width: 170px;
     text-align: center;
 }
 
 .adventures img {
-    width: 150px;
-    height: 100px;
+    width: 170px;
+    height: 120px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 figcaption {
     margin-top: 8px;
-    font-size: .9rem;
     font-weight: bold;
 }
 
-/* =====================================
-   Footer
-===================================== */
-
+/*==============================
+  Footer
+==============================*/
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid #ccc;
-    margin-top: 30px;
-    padding: 15px 0;
+    margin-top: 40px;
+    padding: 20px 0;
 }
 
 footer p {
@@ -224,42 +237,121 @@ footer p {
     height: auto;
 }
 
-/* =====================================
-   General Elements
-===================================== */
+/*=====================================
+   HOME PAGE
+=====================================*/
 
-p {
-    padding: 10px;
+/* Newsletter */
+
+.newsletter {
+    background-color: #f7f7f7;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 25px;
+    margin: 40px 0;
 }
 
-section {
-    margin: 20px 0;
+.newsletter h2 {
+    margin-bottom: 15px;
 }
 
-/* =====================================
-   Contact Us Page
-===================================== */
+.newsletter form {
+    display: grid;
+    gap: 15px;
+}
+
+.newsletter label {
+    font-weight: bold;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.newsletter button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: var(--accent1-color);
+}
+
+/* Call to Action */
+
+.cta {
+    background-color: var(--secondary-color);
+    color: black;
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;
+    margin: 40px 0;
+}
+
+.cta a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta a:hover {
+    background-color: var(--accent1-color);
+}
+
+/* Home Grid */
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.home-grid img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.home-grid article {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/*=====================================
+   CONTACT PAGE
+=====================================*/
 
 .contact-info {
     text-align: center;
     margin: 40px 0;
 }
 
-.contact-info p {
-    margin: 10px 0;
-    font-size: 1rem;
-}
-
 .contact-info iframe {
     width: 100%;
     max-width: 840px;
     height: 400px;
-    margin-top: 20px;
     border: 2px solid var(--primary-color);
     border-radius: 8px;
+    margin-top: 20px;
 }
 
-/* Employee Profiles */
+/* Employees */
 
 .employees {
     display: flex;
@@ -285,13 +377,11 @@ section {
     object-fit: cover;
     border-radius: 50%;
     border: 4px solid var(--primary-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .employees figcaption {
     margin-top: 10px;
     font-weight: bold;
-    color: var(--accent1-color);
 }
 
 /* Contact Form */
@@ -299,14 +389,13 @@ section {
 .contact-form {
     max-width: 700px;
     margin: 40px auto;
-    padding: 25px;
     background-color: #f7f7f7;
-    border: 2px solid var(--primary-color);
+    padding: 25px;
     border-radius: 10px;
+    border: 2px solid var(--primary-color);
 }
 
 .contact-form h2 {
-    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -316,13 +405,6 @@ section {
 }
 
 .contact-form label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.contact-form p {
-    padding: 0;
     font-weight: bold;
 }
 
@@ -333,8 +415,6 @@ section {
     padding: 12px;
     border: 1px solid #999;
     border-radius: 5px;
-    font-family: var(--body-font);
-    font-size: 1rem;
 }
 
 .contact-form textarea {
@@ -342,44 +422,91 @@ section {
     min-height: 140px;
 }
 
-.contact-form input[type="radio"],
-.contact-form input[type="checkbox"] {
-    width: auto;
-    margin-right: 8px;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: 2px solid var(--secondary-color);
-    border-color: var(--secondary-color);
-}
-
 .contact-form button {
     background-color: var(--primary-color);
-    color: var(--white);
-    padding: 14px;
+    color: white;
     border: none;
+    padding: 14px;
     border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
     cursor: pointer;
-    transition: background-color .3s ease;
+    font-weight: bold;
 }
 
 .contact-form button:hover {
     background-color: var(--accent1-color);
 }
 
-/* =====================================
-   Responsive Design
-===================================== */
+/*=====================================
+   TRIPS PAGE
+=====================================*/
 
-@media (max-width: 850px) {
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 40px 0;
+}
 
-    header,
-    main,
-    footer {
-        width: 95%;
+.trip-card {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.trip-card h3 {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.trip-card p {
+    padding: 0 15px 20px;
+}
+
+/* Trips Table */
+
+.trip-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 40px 0;
+}
+
+.trip-table th,
+.trip-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+.trip-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.trip-table tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+/*=====================================
+   RESPONSIVE DESIGN
+=====================================*/
+
+@media (max-width: 900px) {
+
+    header {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 15px;
+    }
+
+    nav {
+        flex-direction: column;
     }
 
     .history {
@@ -396,17 +523,17 @@ section {
         gap: 20px;
     }
 
+    .home-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trip-grid {
+        grid-template-columns: 1fr;
+    }
+
     .employees {
         flex-direction: column;
         align-items: center;
-    }
-
-    .employees figure {
-        width: 100%;
-    }
-
-    .contact-info iframe {
-        height: 300px;
     }
 
     footer {
